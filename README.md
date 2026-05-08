@@ -1,4 +1,4 @@
-> **This repository is for display purposes only.** It showcases the UI, interaction design, and frontend architecture of SUSU Map. All data is hardcoded mock data -- no backend is required to run this app. The production version with real-time data, authentication, and Strapi backend integration is maintained in a private repository.
+> **This repository is for display purposes only.** It showcases the UI, interaction design, and frontend architecture of SUSU Map. All data is hardcoded mock data -- no backend is required to run this app. The production version with real-time data, authentication, and backend integration is maintained in a private repository.
 
 ---
 
