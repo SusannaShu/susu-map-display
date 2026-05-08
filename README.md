@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="docs/new_map.png" width="250" alt="Live Map" />
+  <img src="docs/new_detail.png" width="250" alt="Bottom Sheet Detail" />
+  <img src="docs/new_profile.png" width="250" alt="Profile" />
+</p>
+
 > **This repository is for display purposes only.** It showcases the UI, interaction design, and frontend architecture of SUSU Map. All data is hardcoded mock data -- no backend is required to run this app. The production version with real-time data, authentication, and backend integration is maintained in a private repository.
 
 ---
@@ -5,6 +11,35 @@
 # SUSU Map -- Hyperlocal Campus Community Map
 
 A real-time, community-powered map for college campuses. Students can share free items, post events, list marketplace goods, organize spontaneous hangouts, and stay informed about what is happening around them -- right now.
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/ss_map_stories.png" width="200" alt="Live Map -- Pins with gradient story rings indicate live updates" />
+  <img src="docs/ss_bottom_sheet.png" width="200" alt="Bottom Sheet -- Live from here section with story thumbnails" />
+  <img src="docs/ss_story_viewer.png" width="200" alt="Full-screen story viewer with reactions and community credit" />
+</p>
+<p align="center">
+  <em>Map with story rings</em> · <em>Pin detail with live stories</em> · <em>Full-screen story viewer</em>
+</p>
+
+<p align="center">
+  <img src="docs/ss_time_filter.png" width="200" alt="Time filter with Happening Now badge" />
+  <img src="docs/ss_post_types.png" width="200" alt="Post type selector -- Free, Event, Sell/Trade, Hangout" />
+  <img src="docs/ss_hangout_form.png" width="200" alt="Hangout creation with access scope selector" />
+</p>
+<p align="center">
+  <em>Time-based filtering</em> · <em>4 post types</em> · <em>Hangout + access scope</em>
+</p>
+
+<p align="center">
+  <img src="docs/ss_profile.png" width="200" alt="Profile with school verification and community credit" />
+  <img src="docs/new_chat.png" width="200" alt="Messages" />
+  <img src="docs/new_my_events.png" width="200" alt="My Events" />
+</p>
+<p align="center">
+  <em>Profile + community credit</em> · <em>Messaging</em> · <em>My Events</em>
+</p>
 
 ## Features
 
@@ -63,15 +98,6 @@ npm run dev
 ```
 
 The app will start at `http://localhost:5173` with all mock data pre-loaded. No backend needed.
-
-## Screenshots
-
-The app features four main map layers with distinct visual treatments:
-
-- **Free Stuff** -- Green-ringed pins with availability status badges
-- **Events** -- Purple-ringed pins with "Happening Now" pulse animations
-- **Marketplace** -- Orange-ringed pins with price tags
-- **Hangouts** -- Cyan-ringed pins with joiner count progress bars
 
 ## Production Version
 
