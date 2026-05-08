@@ -7,7 +7,7 @@ import { mockPins, mockStories } from '../data/mockData';
 import type { MapPin, MockStory } from '../data/mockData';
 
 // No backend URL needed -- everything is local mock data
-export const STRAPI_BASE_URL = '';
+export const API_BASE_URL = '';
 
 /**
  * Get all mock posts, optionally filtered by layer.

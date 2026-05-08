@@ -1,6 +1,6 @@
 /**
  * Shared TypeScript types for the community map app
- * These match the Strapi v5 community-post content type schema
+ * These match the API v5 community-post content type schema
  */
 
 // ============ Layer / Category Enums ============
@@ -42,7 +42,7 @@ export interface TimeFilter {
 
 // ============ Core Types ============
 
-export interface StrapiUser {
+export interface ApiUser {
   id: number;
   documentId?: string;
   username: string;
@@ -66,7 +66,7 @@ export interface CommunityPost {
   longitude: number;
   location: string | null;
   imageUrl: string | null;
-  photo: StrapiMedia | null;
+  photo: ApiMedia | null;
   status: PostStatus;
   category: string | null;
   quantityLeft: string | null;
@@ -81,7 +81,7 @@ export interface CommunityPost {
   tags: string[] | null;
   viewCount: number;
   expiresAt: string | null;
-  postedBy: StrapiUser | null;
+  postedBy: ApiUser | null;
   // Access control
   accessScope: AccessScope;
   accessDomain: string | null;
@@ -100,7 +100,7 @@ export interface CommunityPost {
   updatedAt: string;
 }
 
-export interface StrapiMedia {
+export interface ApiMedia {
   id: number;
   url: string;
   name: string;
@@ -177,7 +177,7 @@ export interface CommunityStory {
   expiresAt: string;
   viewCount: number;
   reactions: Record<string, number>;
-  postedBy: StrapiUser | null;
+  postedBy: ApiUser | null;
   createdAt: string;
 }
 
@@ -212,7 +212,7 @@ export interface ConversationPreview {
 
 export interface AuthState {
   jwt: string | null;
-  user: StrapiUser | null;
+  user: ApiUser | null;
   isAuthenticated: boolean;
   schoolEmail: string | null;
   schoolEmailVerified: boolean;
@@ -233,7 +233,7 @@ export interface RegisterCredentials {
 
 export interface LoginResponse {
   jwt: string;
-  user: StrapiUser;
+  user: ApiUser;
 }
 
 // ============ UI Helper Types ============
@@ -275,10 +275,10 @@ export const FREE_CATEGORY_CONFIG: Record<FreeCategory, { label: string }> = {
 // ============ Utility ============
 
 /** Get display image URL for a post (prefers uploaded photo, falls back to imageUrl) */
-export function getPostImageUrl(post: CommunityPost, strapiBaseUrl: string): string {
+export function getPostImageUrl(post: CommunityPost, apiBaseUrl: string): string {
   if (post.photo?.url) {
-    // Strapi media URLs may be relative
-    return post.photo.url.startsWith('http') ? post.photo.url : `${strapiBaseUrl}${post.photo.url}`;
+    // API media URLs may be relative
+    return post.photo.url.startsWith('http') ? post.photo.url : `${apiBaseUrl}${post.photo.url}`;
   }
   return post.imageUrl || 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=300&fit=crop';
 }

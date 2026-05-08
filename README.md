@@ -83,7 +83,7 @@ src/
 
 ```bash
 # Clone
-git clone https://github.com/SusannaShu/susu-map-display.git
+git clone https://github.com/yourusername/susu-map-display.git
 cd susu-map-display
 
 # Install dependencies
@@ -103,7 +103,7 @@ The app will start at `http://localhost:5173` with all mock data pre-loaded. No 
 
 The production version (private repository) includes:
 
-- Real-time data sync via Strapi v5 backend + Socket.IO
+- Real-time data sync via REST backend + Socket.IO
 - OAuth authentication (Google, Apple) and JWT session management
 - Image uploads via Cloudinary
 - .edu email verification with code-based flow
