@@ -58,7 +58,7 @@ const iconMap = {
 
 const tabs: { id: TabId; label: string }[] = [
   { id: 'map', label: 'Live Map' },
-  { id: 'posts', label: 'My Events' },
+  { id: 'posts', label: 'My Posts' },
   // FAB goes in between
   { id: 'messages', label: 'Messages' },
   { id: 'profile', label: 'Profile' },

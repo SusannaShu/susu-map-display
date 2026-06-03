@@ -70,7 +70,7 @@ export function MyPosts() {
           </div>
         ) : (
           <>
-            <h1 className="myEventsTitle">My Events</h1>
+            <h1 className="myEventsTitle">My Posts</h1>
             <button className="myEventsSearchBtn" onClick={() => setIsSearchOpen(true)}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <circle cx="11" cy="11" r="8" />

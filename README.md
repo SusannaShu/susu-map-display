@@ -35,10 +35,10 @@ A real-time, community-powered map for college campuses. Students can share free
 <p align="center">
   <img src="docs/ss_profile.png" width="200" alt="Profile with school verification and community credit" />
   <img src="docs/new_chat.png" width="200" alt="Messages" />
-  <img src="docs/new_my_events.png" width="200" alt="My Events" />
+  <img src="docs/new_my_events.png" width="200" alt="My Posts" />
 </p>
 <p align="center">
-  <em>Profile + community credit</em> · <em>Messaging</em> · <em>My Events</em>
+  <em>Profile + community credit</em> · <em>Messaging</em> · <em>My Posts</em>
 </p>
 
 ## Features
