@@ -83,8 +83,8 @@ export function MyPosts() {
 
       <div className="myEventsFilters">
         <button className={`filterBtn ${filter === 'all' ? 'active' : ''}`} onClick={() => setFilter('all')}>All</button>
-        <button className={`filterBtn ${filter === 'hosting' ? 'active' : ''}`} onClick={() => setFilter('hosting')}>Hosting</button>
-        <button className={`filterBtn ${filter === 'attending' ? 'active' : ''}`} onClick={() => setFilter('attending')}>Attending</button>
+        <button className={`filterBtn ${filter === 'hosting' ? 'active' : ''}`} onClick={() => setFilter('hosting')}>Posting</button>
+        <button className={`filterBtn ${filter === 'attending' ? 'active' : ''}`} onClick={() => setFilter('attending')}>Going</button>
       </div>
 
       <div className="myEventsList">
@@ -107,7 +107,7 @@ export function MyPosts() {
                   </h3>
 
                   {dayEvents.map((post) => {
-                    const isHosting = post.postedBy === user?.username;
+                    const isPosting = post.postedBy === user?.username;
                     return (
                       <div key={post.id} className="eventCard">
                         <div
@@ -130,7 +130,7 @@ export function MyPosts() {
                           </div>
                           <div className="eventTitle">{post.title}</div>
                           <div className="eventRoleBadge">
-                            {isHosting ? 'Hosting' : 'Attending'}
+                            {isPosting ? 'Posting' : 'Going'}
                           </div>
                         </div>
                       </div>
